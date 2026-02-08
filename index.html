@@ -1,97 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nick Christodoulou | Electronics & Firmware Engineer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: #e0f7fa;
-            color: #333;
-        }
-        h1, h2 {
-            color: #00796b;
-        }
-        h3 {
-            color: #004d40;
-        }
-        p, li {
-            color: #004d40;
-        }
-        .project {
-            background: #ffffff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0, 121, 107, 0.3);
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #004d40;
-            font-style: italic;
-        }
-        a {
-            color: #00796b;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #004d40;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Christodoulou | Electronics & Firmware Engineer</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4fdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #004d40;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: .5rem;
+      color: #00796b;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      color: #00796b;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+
+    h2 {
+      color: #004d40;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .project {
+      background: #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #004d40;
+    }
+
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta {
+      background: #00796b;
+      color: #ffffff;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 6px;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Nick Christ</h1>
-<p><strong>Freelance Electronics & Firmware Engineer</strong></p>
+<header>
+  <h1>Nick Christodoulou</h1>
+  <p>Electronics & Firmware Engineer — Available for Freelance Work</p>
+</header>
 
-<p>
-Schematic design, PCB layout, and MCU firmware development.
-Specialized in KiCad, ESP8266/ESP32, Arduino C++, and low-power designs.
-</p>
+<nav>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<h2>Skills</h2>
-<ul>
-    <li>Schematic design (KiCad)</li>
-    <li>2–4 layer PCB layout</li>
-    <li>ESP8266 / ESP32 firmware</li>
-    <li>JLCPCB production files (BOM, CPL)</li>
-</ul>
+<section id="services">
+  <h2>What I Do</h2>
+  <p>
+    I design reliable electronics and embedded firmware for prototypes and
+    small production runs, with a focus on clean architecture and
+    manufacturing-ready designs.
+  </p>
 
-<h2>Projects</h2>
+  <ul>
+    <li>Schematic design & PCB layout (KiCad)</li>
+    <li>2–4 layer boards, JLCPCB-ready files (BOM, CPL)</li>
+    <li>ESP8266 / ESP32 firmware (Arduino C++)</li>
+    <li>Low-power and battery-operated designs</li>
+  </ul>
+</section>
 
-<div class="project">
+<section id="projects">
+  <h2>Selected Projects</h2>
+
+  <div class="project">
     <h3>ESP8266 Low-Power Data Logger</h3>
     <p>
-        Battery-powered data logger using ESP8266 deep sleep.
-        Firmware wakes every 15 minutes, reads sensors, logs data,
-        and returns to sleep.
+      Battery-powered IoT data logger designed for long autonomous operation.
+      The firmware wakes periodically, reads sensors, stores/transmits data,
+      and returns to deep sleep to minimize power consumption.
     </p>
-    <p><strong>Tools:</strong> KiCad, ESP8266, Arduino C++</p>
+    <p><strong>Tech:</strong> ESP8266, Arduino C++, KiCad</p>
     <p>
-        <a href="https://github.com/nichrist/project-repo">GitHub Repository</a>
+      <a href="https://github.com/nichrist/project-repo">View on GitHub</a>
     </p>
-</div>
+  </div>
 
-<div class="project">
+  <div class="project">
     <h3>Sensor Interface Board</h3>
     <p>
-        Custom PCB for temperature and humidity sensing with I²C interface.
-        Designed for JLCPCB SMT assembly.
+      Custom I²C sensor interface PCB designed for SMT assembly at JLCPCB.
+      Focus on compact layout, clean routing, and production constraints.
     </p>
-    <p><strong>Tools:</strong> KiCad</p>
-</div>
+    <p><strong>Tech:</strong> KiCad</p>
+  </div>
+</section>
 
-<h2>Contact</h2>
-<p>Email: nichrist71@gmail.com</p>
+<section id="contact">
+  <h2>Contact</h2>
 
-<div class="footer">
-    © 2026 Nick Christodoulou
-</div>
+  <p>
+    Interested in working together or need help with a hardware or firmware project?
+  </p>
+
+  <div class="cta">
+    <p>Email: <a href="mailto:nichrist71@gmail.com">nichrist71@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/nichrist">github.com/nichrist</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nick Christodoulou
+</footer>
 
 </body>
 </html>
