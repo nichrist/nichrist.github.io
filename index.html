@@ -138,17 +138,33 @@
   <h2>Selected Projects</h2>
 
   <div class="project">
-    <h3>ESP8266 Low-Power Data Logger</h3>
-    <p>
-      Battery-powered IoT data logger designed for long autonomous operation.
-      The firmware wakes periodically, reads sensors, stores/transmits data,
-      and returns to deep sleep to minimize power consumption.
-    </p>
-    <p><strong>Tech:</strong> ESP8266, Arduino C++, KiCad</p>
-    <p>
-      <a href="https://github.com/nichrist/project-repo">View on GitHub</a>
-    </p>
-  </div>
+  <h3>ESP8266 Environmental Data Logger</h3>
+
+  <p>
+    Environmental monitoring device designed for long-term, unattended data
+    collection with minimal power consumption.
+  </p>
+
+  <p>
+    The system supports dual operation modes: a low-power battery-powered mode
+    using deep sleep for periodic measurements, and a continuous 5V-powered mode
+    that enables Wi-Fi access and a built-in web interface.
+  </p>
+
+  <ul>
+    <li>Temperature, barometric pressure, and soil humidity sensing</li>
+    <li>Low-power operation with deep sleep (~10 days battery life)</li>
+    <li>Local SD card data logging</li>
+    <li>HTML web interface hosted on ESP8266 access point</li>
+    <li>Modular, serviceable design</li>
+  </ul>
+
+  <p><strong>Technologies:</strong> ESP8266, Arduino C++, HTML, SD Card, Sensors</p>
+
+  <p>
+    <a href="https://github.com/nichrist/REPO_NAME">View source code on GitHub</a>
+  </p>
+</div>
 
   <div class="project">
     <h3>Sensor Interface Board</h3>
